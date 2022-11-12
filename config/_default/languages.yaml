@@ -1,0 +1,19 @@
+# Languages
+#   Create a section for each of your site's languages.
+#   Documentation: https://wowchemy.com/docs/hugo-tutorials/language/
+
+# Default language
+en:
+  languageCode: en-us
+  contentDir: content/en
+
+# Uncomment the lines below to configure your website in a second language.
+he:
+  languageCode: he-il
+  contentDir: content/he
+  title: גיא פרימן
+
+zh-Hant:
+  languageCode: zh-Hant
+  contentDir: content/zh
+  title: 傅明谷

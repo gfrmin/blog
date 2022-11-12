@@ -1,0 +1,12 @@
+.hugo_build.lock
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+Thumbs.db
+assets/jsconfig.json
+/blogdown/
+/public/
+/resources/
+*~
