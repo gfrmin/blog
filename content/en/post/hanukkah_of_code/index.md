@@ -4,7 +4,6 @@ subtitle: "Solving the data version of Advent of Code in R"
 author: admin
 date: 2022-12-25
 tags: ["data", "analysis", "fun"]
-draft: true
 ---
 
 The madpersons behind the retro-chic data analysis tool [Visicalc](https://visicalc.org) have created an alternative to the infamous "Advent of Code". Instead of programming to solve yet more optimization puzzles, and instead of the hackneyed Christmas theme, the "Hanukkah of Data" requires data analysis to solve a ~~murder mystery~~ rug-finding mission.
