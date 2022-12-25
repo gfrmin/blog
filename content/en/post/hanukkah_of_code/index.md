@@ -159,3 +159,23 @@ print(true_love$phone.y)
 ```
 ## [1] "315-618-5263"
 ```
+
+
+```r
+                                        # Puzzle 8
+
+collector <- orders_plus  %>% filter(str_detect(desc, "^Noah")) %>% group_by(customerid) %>% filter(n() > 200) %>% select(name, phone) %>% distinct
+```
+
+```
+## Adding missing grouping variables: `customerid`
+```
+
+```r
+collector_phone <- collector %>% pull(phone)
+print(collector_phone)
+```
+
+```
+## [1] "929-906-5980"
+```
