@@ -10,9 +10,9 @@ The madpersons behind the retro-chic data analysis tool [Visicalc](https://visic
 
 [You can find this (first?) year's Hanukkah of Data here](https://hanukkah.bluebird.sh/5783/).
 
-I only just found out about it, so although one puzzle was released for each day of real-life Chanukah, I could gorge on the first 7 puzzles, meaning there's only one more puzzle left, which will be released in a few hours. Each is represented by an ASCII candle in an ASCII world (quite an impressive achievement in its own right).
+I only just found out about it, so although one puzzle was released for each day of real-life Chanukah, I was able to gorge on the first 7 puzzles, needing only to wait for the last puzzle, the solving of which revealed something quite spectacular... Each puzzle is represented by an ASCII candle in an ASCII world (quite an impressive achievement in its own right).
 
-Here's how I solved those first 7 puzzles in R. I'll update with the eighth puzzle later. I can also give more details (aka make the code clearer) upon request.
+Here's how I solved all 8 puzzles in R. I can probably also give more details (aka make the code clearer) upon request.
 
 
 ```r
