@@ -70,7 +70,7 @@ name_to_initials <- function(name) {
 
 orders_plus_jd <- orders_plus %>% mutate(name_initials = map_chr(name, name_to_initials)) %>% filter(name_initials == "JD")
 orders_coffeebagels_2017 <- orders_plus %>% filter(sku %in% c("DLI1464", "BKY4234", "BKY5887")) %>% group_by(orderid) %>% filter(n() > 1) %>% ungroup %>% filter(year(shipped) == 2017)
-contractor_phone <- orders_coffeebagels_2017 %>% select(phone) %>% distinct
+contractor_phone <- orders_coffeebagels_2017 %>% pull(phone) %>% unique
 
 print(contractor_phone)
 ```
@@ -100,7 +100,7 @@ print(tinder_girl_phone)
 orders_queens_cats <- orders_plus %>% filter(str_detect(citystatezip, "Queens")) %>% filter(str_detect(desc, "Cat"))
 cat_lady_candidates <- orders_queens_cats %>% select(customerid, name, phone) %>% distinct # only one female name
 
-print(cat_lady_candidates)
+print(cat_lady_candidates[1,]$phone)
 ```
 
 ```{r}

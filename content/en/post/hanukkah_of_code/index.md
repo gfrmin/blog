@@ -77,16 +77,13 @@ name_to_initials <- function(name) {
 
 orders_plus_jd <- orders_plus %>% mutate(name_initials = map_chr(name, name_to_initials)) %>% filter(name_initials == "JD")
 orders_coffeebagels_2017 <- orders_plus %>% filter(sku %in% c("DLI1464", "BKY4234", "BKY5887")) %>% group_by(orderid) %>% filter(n() > 1) %>% ungroup %>% filter(year(shipped) == 2017)
-contractor_phone <- orders_coffeebagels_2017 %>% select(phone) %>% distinct
+contractor_phone <- orders_coffeebagels_2017 %>% pull(phone) %>% unique
 
 print(contractor_phone)
 ```
 
 ```
-## # A tibble: 1 × 1
-##   phone       
-##   <chr>       
-## 1 212-771-8924
+## [1] "212-771-8924"
 ```
 
 
@@ -125,19 +122,11 @@ print(tinder_girl_phone)
 orders_queens_cats <- orders_plus %>% filter(str_detect(citystatezip, "Queens")) %>% filter(str_detect(desc, "Cat"))
 cat_lady_candidates <- orders_queens_cats %>% select(customerid, name, phone) %>% distinct # only one female name
 
-print(cat_lady_candidates)
+print(cat_lady_candidates[1,]$phone)
 ```
 
 ```
-## # A tibble: 6 × 3
-##   customerid name           phone       
-##        <dbl> <chr>          <chr>       
-## 1       7675 Anita Koch     315-492-7411
-## 2       6560 Joseph Weaver  680-839-3746
-## 3      11780 Joshua White   914-632-0184
-## 4       3335 Jose Cook      516-745-9461
-## 5       5486 Sam House      607-836-2966
-## 6       6905 Justin Cochran 716-525-5173
+## [1] "315-492-7411"
 ```
 
 
