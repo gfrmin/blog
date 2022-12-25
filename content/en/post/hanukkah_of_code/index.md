@@ -162,7 +162,7 @@ print(true_love$phone.y)
 
 
 ```r
-                                        # Puzzle 8
+# Puzzle 8
 
 collector <- orders_plus  %>% filter(str_detect(desc, "^Noah")) %>% group_by(customerid) %>% filter(n() > 200) %>% select(name, phone) %>% distinct
 ```
