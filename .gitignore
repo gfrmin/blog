@@ -10,3 +10,5 @@ assets/jsconfig.json
 /public/
 /resources/
 *~
+*.csv
+*.zip
