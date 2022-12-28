@@ -6,7 +6,7 @@ date: 2022-12-25
 tags: ["data", "analysis", "fun"]
 ---
 
-The madpersons behind the retro-chic data analysis tool [Visicalc](https://visicalc.org) have created an alternative to the infamous "Advent of Code". Instead of programming to solve yet more optimization puzzles, and instead of the hackneyed Christmas theme, the "Hanukkah of Data" requires data analysis to solve a ~~murder mystery~~ rug-finding mission.
+The madpersons behind the retro-chic data analysis tool [VisiData](https://visidata.org) have created an alternative to the infamous "Advent of Code". Instead  of programming to solve yet more optimization puzzles, and instead of the hackneyed Christmas theme, the "Hanukkah of Data" requires data analysis to solve a ~~murder mystery~~ rug-finding mission.
 
 [You can find this (first?) year's Hanukkah of Data here](https://hanukkah.bluebird.sh/5783/).
 
